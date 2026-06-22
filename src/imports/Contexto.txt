@@ -1,0 +1,19 @@
+Contexto del Caso: Modernización del Sistema de Aduanas Terrestres de Chile
+
+El Servicio Nacional de Aduanas de Chile es un organismo público dependiente del Ministerio de Hacienda cuya misión es fiscalizar y facilitar el comercio exterior, contribuyendo a la recaudación fiscal, al desarrollo económico y a la protección del país. Entre sus funciones se encuentran la fiscalización de importaciones y exportaciones, el control de personas y mercancías en pasos fronterizos, la recaudación de impuestos asociados al comercio exterior y la generación de estadísticas comerciales.
+
+Actualmente, los pasos fronterizos terrestres entre Chile y Argentina presentan graves problemas de congestión. En complejos como Cardenal Samoré y Los Libertadores se registran tiempos de espera que pueden variar entre 8 y 20 horas durante períodos de alta demanda turística. Esta situación se debe principalmente al aumento sostenido del flujo de personas y vehículos, limitaciones de infraestructura física, procesos manuales, duplicidad de información entre organismos y falta de digitalización de trámites.
+
+Uno de los principales problemas detectados es que muchos pasajeros llegan sin la documentación requerida o desconocen que ciertos trámites pueden realizarse previamente por internet. Esto genera retrasos en las ventanillas de atención y afecta el flujo general de pasajeros, vehículos particulares, transporte de carga y funcionarios públicos.
+
+Además, en el proceso intervienen múltiples organismos como Aduanas, Policía de Investigaciones (PDI), Servicio Agrícola y Ganadero (SAG) y organismos fronterizos argentinos, lo que obliga a coordinar información y procesos entre distintas instituciones nacionales e internacionales.
+
+Con el objetivo de modernizar los procesos aduaneros y reducir significativamente los tiempos de espera, se propone desarrollar un sistema informático integral que permita digitalizar y automatizar los trámites fronterizos terrestres entre Chile y Argentina.
+
+El sistema deberá permitir la gestión automatizada de documentación para menores de edad que viajan al extranjero, la generación y validación de formularios para la salida e ingreso temporal de vehículos particulares, la declaración de alimentos, productos vegetales y animales exigida por el SAG, así como la gestión de mascotas que ingresan al país.
+
+Asimismo, la solución deberá integrar información proveniente de Aduanas, PDI, SAG y organismos aduaneros de países limítrofes, permitiendo compartir datos de manera segura y eficiente. El sistema deberá proporcionar trazabilidad completa de las operaciones, automatizar controles documentales, generar reportes estadísticos de ingresos y egresos de personas y vehículos, y ofrecer herramientas de monitoreo para la toma de decisiones.
+
+La plataforma deberá ser accesible únicamente mediante cuentas autorizadas, garantizar la confidencialidad de los datos personales y migratorios, responder eficientemente ante grandes volúmenes de consultas simultáneas y ofrecer una experiencia de usuario intuitiva para pasajeros, funcionarios y administradores.
+
+El objetivo principal del proyecto es disminuir los tiempos de espera en los pasos fronterizos terrestres, mejorar la experiencia de los usuarios, optimizar la coordinación entre organismos participantes y fortalecer la capacidad de fiscalización mediante procesos digitales modernos y seguros.

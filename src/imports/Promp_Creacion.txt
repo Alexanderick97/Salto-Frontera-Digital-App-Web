@@ -1,0 +1,98 @@
+Quiero crear un prototipo de alta fidelidad en Figma para un sistema llamado "Salto Frontera Digital", que permita a los viajeros realizar trámites aduaneros de forma anticipada para cruzar el paso fronterizo Cardenal Samoré (Chile-Argentina). El sistema tiene como objetivo reducir los tiempos de espera de 8-20 horas a menos de 10 minutos.
+
+El prototipo debe incluir las siguientes pantallas y flujos:
+
+1. **Pantalla de Login** (para viajeros y funcionarios):
+   - Campos: Email, Contraseña.
+   - Botón "Iniciar sesión".
+   - Enlace "¿Olvidaste tu contraseña?".
+   - Botón "Registrarse" (para nuevos viajeros).
+
+2. **Pantalla de Registro de Viajero**:
+   - Campos: Nombre, Apellido, RUT, Email, Contraseña, Confirmar Contraseña.
+   - Checkbox de aceptación de términos y condiciones.
+   - Botón "Registrarse".
+
+3. **Dashboard del Viajero** (pantalla principal después de login):
+   - Menú lateral o superior con opciones:
+     - "Registrar Vehículo"
+     - "Declaración SAG"
+     - "Autorización de Menor"
+     - "Declaración de Mascota"
+     - "Reservar Turno de Cruce"
+     - "Mis Trámites" (consultar estado)
+   - Botón "Cerrar Sesión".
+   - Un panel que muestre el estado actual de los trámites (ej. "Vehiculo: Pendiente", "SAG: Completado").
+
+4. **Pantalla "Registrar Vehículo"**:
+   - Campos: Patente, Marca, Modelo, Año, País de Registro.
+   - Botón "Guardar vehículo".
+   - Mensaje de confirmación con código QR generado.
+
+5. **Pantalla "Declaración SAG"**:
+   - Pregunta: "¿Transporta productos animales o vegetales?" (Sí/No).
+   - Si selecciona Sí, mostrar campos para detallar productos.
+   - Botón "Enviar declaración".
+   - Mensaje de confirmación.
+
+6. **Pantalla "Autorización de Menor"**:
+   - Campos: Nombre del menor, RUT, Fecha de nacimiento.
+   - Campo para adjuntar documento notarial (simular carga de archivo).
+   - Botón "Registrar autorización".
+   - Mensaje de confirmación.
+
+7. **Pantalla "Declaración de Mascota"**:
+   - Campos: Tipo de mascota (perro, gato, otro), Nombre, Raza, Edad.
+   - Campo para adjuntar certificado sanitario (simular carga de archivo).
+   - Botón "Declarar mascota".
+   - Mensaje de confirmación.
+
+8. **Pantalla "Reservar Turno de Cruce"**:
+   - Calendario para seleccionar fecha.
+   - Selector de hora (disponibilidad en slots).
+   - Botón "Reservar turno".
+   - Mensaje de confirmación con código QR.
+
+9. **Pantalla "Mis Trámites"**:
+   - Tabla que muestre todos los trámites realizados con su estado (ej. Vehículo: Aprobado, SAG: Pendiente, Menor: Aprobado, Mascota: Pendiente, Turno: Confirmado).
+   - Botón "Ver detalle" para cada trámite.
+
+10. **Panel del Funcionario (Aduanas/PDI/SAG)**:
+    - Pantalla de login específica para funcionarios.
+    - Dashboard con opción "Escanear QR" (botón que abre cámara simulada o campo para ingresar código).
+    - Al escanear, mostrar los datos del viajero y sus trámites completos (vehículo, SAG, menor, mascota, turno).
+    - Botones para "Validar documentos", "Verificar antecedentes PDI", "Validar declaración SAG".
+    - Estado de cada validación (Pendiente/Aprobado/Rechazado).
+    - Botón "Registrar cruce" (entrada/salida).
+
+11. **Panel de Administrador**:
+    - Dashboard con opciones:
+      - "Generar reportes" (con filtros de fecha y tipo, exportar a PDF/Excel).
+      - "Gestionar usuarios" (listado de usuarios con opción de editar, bloquear, eliminar).
+    - Botón "Cerrar Sesión".
+
+12. **Paleta de colores**:
+    - Color principal (fondo de encabezados, botones principales): **#197278** (verde azulado oscuro).
+    - Color secundario (barras laterales, menús): **#283d3b** (gris muy oscuro).
+    - Color de fondo general: **#edddd4** (beige claro).
+    - Color de acento (alertas, botones de acción peligrosa): **#c44536** (rojo ladrillo).
+    - Color de botones de éxito o confirmación: **#772e25** (marrón rojizo oscuro, usado para botones secundarios).
+    - Usar estos colores en toda la interfaz, asegurando un contraste adecuado para accesibilidad (mínimo 4.5:1 para texto).
+
+13. **Requisitos de accesibilidad** (simular en diseño):
+    - Tamaño de fuente mínimo 16px para texto principal.
+    - Botones grandes y fácilmente cliqueables (mínimo 44px de alto).
+    - Etiquetas claras en todos los campos de formulario.
+    - Navegación por teclado simulada (indicador de foco visible).
+    - Texto alternativo para imágenes y QR.
+
+14. **Navegación entre pantallas**:
+    - Conectar todas las pantallas con interacciones (clics) para simular el flujo completo:
+      - Login → Dashboard (viajero).
+      - Dashboard → cada una de las pantallas de trámite.
+      - Cada trámite → confirmación → Dashboard.
+      - Dashboard → Mis Trámites.
+      - Panel de funcionario → Escanear QR → Datos del viajero → Validaciones → Registrar cruce.
+      - Panel de administrador → Generar reportes → Exportar.
+
+El prototipo debe ser completo, navegable y representar fielmente el sistema propuesto. Incluye todas las pantallas descritas con sus elementos y la paleta de colores definida.
