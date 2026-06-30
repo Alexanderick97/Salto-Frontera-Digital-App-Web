@@ -273,7 +273,7 @@ export default function App() {
     );
   }
 
-  // ── LOGIN ─────────────────────────────────────────────────────────────────
+// ── LOGIN ─────────────────────────────────────────────────────────────────
   if (screen === "login") {
     return (
       <>
@@ -289,7 +289,7 @@ export default function App() {
               Reduce tu espera de horas a minutos
             </p>
           </div>
-
+  
           {/* 3-tab selector */}
           <div className="mx-5 mt-6">
             <div className="flex rounded-2xl overflow-hidden border-2 p-1 gap-1" style={{ borderColor: "rgba(40,61,59,0.15)", background: "#fff" }}>
@@ -306,10 +306,10 @@ export default function App() {
               ))}
             </div>
           </div>
-
+  
           <div className="px-5 py-5 flex-1">
             <div className="bg-white rounded-3xl p-6 shadow-sm" style={{ border: "1px solid rgba(40,61,59,0.08)" }}>
-
+  
               {/* Admin badge */}
               {loginTab === "admin" && (
                 <div className="flex items-center gap-3 p-3 rounded-2xl mb-5" style={{ background: "rgba(40,61,59,0.05)", border: "1px solid rgba(40,61,59,0.12)" }}>
@@ -322,11 +322,11 @@ export default function App() {
                   </div>
                 </div>
               )}
-
+  
               <h2 className="text-base font-bold mb-5" style={{ color: P.darkGreen }}>
                 {loginTab === "viajero" ? "Iniciar sesión" : loginTab === "funcionario" ? "Acceso institucional" : "Iniciar sesión como administrador"}
               </h2>
-
+  
               <div className="flex flex-col gap-4">
                 <FieldBlock label="Correo electrónico">
                   <div className="relative">
@@ -336,7 +336,7 @@ export default function App() {
                       className={inputBase} style={{ ...inputSt, paddingLeft: "2.25rem" }} />
                   </div>
                 </FieldBlock>
-
+  
                 <FieldBlock label="Contraseña">
                   <div className="relative">
                     <Lock size={15} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "#9aafae" }} />
@@ -344,7 +344,8 @@ export default function App() {
                       className={inputBase} style={{ ...inputSt, paddingLeft: "2.25rem" }} />
                   </div>
                 </FieldBlock>
-
+  
+                {/* Campo adicional solo para admin */}
                 {loginTab === "admin" && (
                   <FieldBlock label="Código de acceso">
                     <div className="relative">
@@ -355,13 +356,12 @@ export default function App() {
                     <p className="text-xs" style={{ color: "#9aafae" }}>Proporcionado por tu supervisor</p>
                   </FieldBlock>
                 )}
-
-                {(loginTab === "funcionario" || loginTab === "admin") && (
-                  <label className="flex items-center gap-2.5 text-sm cursor-pointer" style={{ color: P.darkGreen }}>
-                    <input type="checkbox" className="w-4 h-4 accent-[#197278]" /> Recordar sesión
-                  </label>
-                )}
-
+  
+                {/* Checkbox "Recordar sesión" visible para TODOS los roles */}
+                <label className="flex items-center gap-2.5 text-sm cursor-pointer" style={{ color: P.darkGreen }}>
+                  <input type="checkbox" className="w-4 h-4 accent-[#197278]" /> Recordar sesión
+                </label>
+  
                 <button
                   onClick={() => {
                     if (loginTab === "viajero") nav("dash");
@@ -372,7 +372,7 @@ export default function App() {
                   style={{ background: loginTab === "admin" ? P.darkGreen : P.teal, minHeight: "44px" }}>
                   {loginTab === "viajero" ? "Iniciar sesión" : loginTab === "funcionario" ? "Ingresar al sistema" : "Ingresar como administrador"}
                 </button>
-
+  
                 {loginTab === "viajero" && (
                   <>
                     <button onClick={() => { setForgotEmail(""); setForgotMethod(null); setForgotCode(""); nav("forgot-1"); }}
