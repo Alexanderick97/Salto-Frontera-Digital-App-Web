@@ -121,21 +121,8 @@ El proyecto utiliza **versionado semántico (Major.Minor.Patch)** y está alojad
 
 ## 📂 Estructura del Repositorio
 
-## 📂 Estructura del Repositorio
-
 ```text
 Salto-Frontera-Digital-App-Web/
-├── docs/
-│   ├── Plan de Proyecto_Salto Frontera Digital.docx
-│   ├── Plan de Pruebas – Salto Frontera Digital.docx
-│   ├── Historias de Usuario (HUs).docx
-│   ├── Matriz de Casos de Prueba.xlsx
-│   ├── MATRIZ CONTROL DE CAMBIO.xlsx
-│   └── PLANTILLA_Matriz_EDT Alum.xlsx
-├── evidencias/
-│   ├── Captura_CP01.png
-│   ├── Captura_CP04.png
-│   └── ...
 ├── guidelines/
 ├── src/
 │   ├── app/
